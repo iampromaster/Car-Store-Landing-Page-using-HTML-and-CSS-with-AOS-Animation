@@ -1,0 +1,136 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+.nav {
+  width: 100%;
+  height: 15vh;
+  padding: 30px 50px;
+}
+.nav .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo a {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.wrapper .links a {
+  color: #fff;
+  position: relative;
+  margin: 0 20px;
+  transition: 0.3s linear;
+}
+
+.links a::before {
+  position: absolute;
+  content: "";
+  height: 3.5px;
+  width: 0;
+  background: #277eab;
+  left: 0;
+  bottom: -4px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+}
+
+.links a:hover::before,
+.links a:hover {
+  color: #277eab;
+  width: 100%;
+}
+
+.wrapper .search i {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  height: 85vh;
+  padding: 0 50px;
+}
+
+section .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .main {
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+}
+.main h1 {
+  font-size: 4rem;
+}
+.main h2 {
+  color: #277eab;
+  font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+}
+
+.main p {
+  margin-top: 10px;
+  color: #635e5c;
+}
+
+.main .order {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+  width: 100%;
+  justify-content: space-around;
+  min-height: 7vh;
+}
+
+.order h3 {
+  font-size: 1.8rem;
+}
+
+.order button {
+  min-width: 50%;
+  height: 100px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom right, #277eab 40%, #1b5978);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 2px;
+  cursor: pointer;
+  font-size: clamp(0.6rem, 1rem 5vw, 3rem);
+  transition: 0.1s linear;
+}
+
+.order button:hover {
+  box-shadow: 0 0 30px #277eab;
+  background: linear-gradient(to bottom right, #1b5978, #277eab 40%);
+}
+
+.content .image img {
+  max-width: 100%;
+  width: 100%;
+  filter: drop-shadow(-10px -10px 200px #277eab);
+}
